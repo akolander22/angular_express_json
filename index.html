@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="olympicApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Solo Angular Challenge</title>
+    <script src="vendor/angular.min.js" charset="utf-8"></script>
+    <script src="js/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <!-- <base href="/" /> -->
+  </head>
+  <body ng-controller="MainController">
+    <div class="list">
+
+    <h1>Solo Angular Olympics</h1>
+
+    <button ng-click="addAthletes()" class="button">Generate Athletes</button>
+    <!-- <button ng-click="addAthletes()" class="button">Judo</button>
+    <button ng-click="addAthletes()" class="button">Badminton</button>
+    <button ng-click="addAthletes()" class="button">Diving</button>
+    <button ng-click="addAthletes()" class="button">Archery</button>
+    <button ng-click="addAthletes()" class="button">Table Tennis</button> -->
+
+    <!-- <div ng-view>
+
+    </div> -->
+    <div class="test">
+
+    <ul style="list-style-type: none">
+
+      <li>* * * * * * * * * Judo Athlete * * * * * * * * *</li>
+      <div class="redBar"></div>
+        <h3>{{randoJudo.name}}</h3>
+          <h4>{{randoJudo.origin}}</h4>
+      <li> * * * * * * * Badminton Athlete * * * * * * *</li>
+      <div class="redBar"></div>
+        <h3>{{randoBadminton.name}}</h3>
+          <h4>{{randoBadminton.origin}}</h4>
+      <li> * * * * * * * * Archery Athlete * * * * * * * *</li>
+      <div class="redBar"></div>
+        <h3>{{randoArchery.name}}</h3>
+          <h4>{{randoArchery.origin}}</h4>
+      <li> * * * * * * * * Diving Athlete * * * * * * * * * </li>
+      <div class="redBar"></div>
+        <h3>{{randoDiving.name}}</h3>
+          <h4>{{randoDiving.origin}}</h4>
+      <li> * * * * * * * Table Tennis Athlete * * * * * * *</li>
+      <div class="redBar"></div>
+        <h3>{{randoTableTennis.name}}</h3>
+          <h4>{{randoTableTennis.origin}}</h4>
+    </ul>
+    </div>
+    </div>
+  </body>
+</html>
